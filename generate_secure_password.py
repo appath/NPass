@@ -84,7 +84,7 @@ character_set1.pack(fill="both", expand="yes", padx=4, pady=4)
 #generate.pack()
 
 #WEB_LINK
-url = "https://github.com/appath/GeneratePassword"
+url = "https://github.com/appath/GeneratePassword/releases"
 
 def callback_function(event):
     webbrowser.open_new(url)
