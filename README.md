@@ -1,1 +1,1 @@
-# GeneratePassword
+# Generate Secure Password
