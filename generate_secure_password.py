@@ -80,7 +80,7 @@ character_set1.pack(fill="both", expand="yes", padx=4, pady=4)
 character_set2 = ttk.LabelFrame(details, text=" Secure Password ")
 
 #Entry password
-exhaust = Entry(character_set2, width=59)
+exhaust = ttk.Entry(character_set2, width=59)
 exhaust.grid(padx=6, pady=4, row=0, column=0)
 
 #Button 0 and 1 (Copy, Generate)
