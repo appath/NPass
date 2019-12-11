@@ -92,7 +92,7 @@ generate_1.grid(padx=2, row=0, column=2)
 #LabelFrame2 END
 character_set2.pack(fill="both", expand="yes", padx=4, pady=4)
 
-#WEB_LINK
+#WEB_LINK Sub-shelf
 url = "https://github.com/appath/GeneratePassword/releases"
 
 def callback_function(event):
