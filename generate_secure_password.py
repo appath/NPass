@@ -4,6 +4,10 @@ from tkinter import *
 from tkinter import ttk
 import webbrowser
 
+# Function for copying password
+def copy_set():
+	pass
+
 src = Tk()
 
 src.wm_title("#Generate Secure Password")
@@ -84,7 +88,7 @@ exhaust = ttk.Entry(character_set2, width=59)
 exhaust.grid(padx=6, pady=4, row=0, column=0)
 
 #Button 0 and 1 (Copy, Generate)
-generate_0 = ttk.Button(character_set2, text="Copy")
+generate_0 = ttk.Button(character_set2, text="Copy", command=copy_set)
 generate_1 = ttk.Button(character_set2, text="Generate")
 generate_0.grid(row=0, column=1)
 generate_1.grid(padx=2, row=0, column=2)
@@ -92,7 +96,7 @@ generate_1.grid(padx=2, row=0, column=2)
 #LabelFrame2 END
 character_set2.pack(fill="both", expand="yes", padx=4, pady=4)
 
-#WEB_LINK Sub-shelf
+#WEB_LINK
 url = "https://github.com/appath/GeneratePassword/releases"
 
 def callback_function(event):
