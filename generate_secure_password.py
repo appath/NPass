@@ -13,7 +13,7 @@ src = Tk()
 src.wm_title("#Generate Secure Password")
 src.iconbitmap("img/icon.ico")
 src.resizable(height=False, width=False)
-src.geometry("544x255")
+src.geometry("544x262")
 
 #NoteBook
 note = ttk.Notebook(src)
@@ -27,6 +27,7 @@ note.add(information, text="  Information  ")
 note.add(about, text="  About  ")
 note.pack(fill=BOTH, expand=True)
 
+#Details NOTE
 #LabelFrame 
 character_set = ttk.LabelFrame(details, text=" Character Set ")
 
@@ -91,7 +92,7 @@ exhaust.grid(padx=6, pady=4, row=0, column=0)
 generate_0 = ttk.Button(character_set2, text="Copy", command=copy_set)
 generate_1 = ttk.Button(character_set2, text="Generate")
 generate_0.grid(row=0, column=1)
-generate_1.grid(padx=2, row=0, column=2)
+generate_1.grid(padx=0, row=0, column=2)
 
 #LabelFrame2 END
 character_set2.pack(fill="both", expand="yes", padx=4, pady=4)
@@ -106,6 +107,27 @@ link = ttk.Label(src, text="#Releases", cursor="hand2")
 link.bind("<Button-1>", callback_function)
 link.pack(padx=4, side=LEFT)
 
+#Information NOTE
+#LabelFrame3
+character_set3 = ttk.LabelFrame(information, text="Create strong and random passwords")
+
+#README
+readme = ttk.Label(character_set3, text="Be sure to use a unique password for each new account.\
+	\nThe danger of using the same passwords is that if one site is compromised, it will\
+	\nbe easier for hackers to try to use the same username and password combination on\
+	\nother websites.\
+	\n\
+	\nDo not use any data related to your identity in passwords. Names,\
+	\nbirthdays and addresses are easy to remember, but they are also\
+	\neasy to find on the Internet. Therefore, to achieve maximum\
+	\npassword strength, this information should not be used.\
+	\n\
+	\nPasswords must be at least 12 characters long and contain letters, numbers\
+	\nand special characters. Try not to use weak and commonly used passwords.")
+readme.grid(padx=4, row=0, column=0)
+
+#LabelFrame3 END
+character_set3.pack(fill="both", expand="yes", padx=4, pady=4)
+
 if __name__ == "__main__":
 	src.mainloop()
-
