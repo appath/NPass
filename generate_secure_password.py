@@ -27,7 +27,7 @@ note.add(information, text="  Information  ")
 note.add(about, text="  About  ")
 note.pack(fill=BOTH, expand=True)
 
-#Details NOTE
+#Details
 #LabelFrame 
 character_set = ttk.LabelFrame(details, text=" Character Set ")
 
@@ -107,7 +107,7 @@ link = ttk.Label(src, text="#Releases", cursor="hand2")
 link.bind("<Button-1>", callback_function)
 link.pack(padx=4, side=LEFT)
 
-#Information NOTE
+#Information
 #LabelFrame3
 character_set3 = ttk.LabelFrame(information, text="Create strong and random passwords")
 
