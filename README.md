@@ -1,5 +1,7 @@
 #### NPass (Generate random password)
 
+![License](https://img.shields.io/github/license/appath/NPass?label=License&style=flat-square)
+
 NPass GUI (Generate random password) - Not ready. In the process...
 
 ![NPass GUI](https://github.com/appath/NPass/blob/master/%23/%23npass_gui.png)
@@ -10,7 +12,7 @@ __Console version__
 
 NPass Console Option (Generate random password)
 
-[![Insiders](https://img.shields.io/github/v/release/appath/NPass?color=inactive&label=Console&style=flat-square)](https://github.com/appath/NPass/releases)
+[![Console](https://img.shields.io/github/v/release/appath/NPass?color=inactive&label=Console&style=flat-square)](https://github.com/appath/NPass/releases)
 
 __F.A.Q__
 
@@ -33,6 +35,3 @@ select item Path click on the <Modify> button, click on the <Create> button agai
 don't forget to confirm everything.
 
 That's all now, no need to constantly enter paths just in the (CMD) console Example: ```C:\Users\appath> npass -l 27 -c 7```
-
-![GitHub](https://img.shields.io/github/license/appath/NPass?style=flat-square)
-
