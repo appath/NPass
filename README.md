@@ -34,7 +34,6 @@ don't forget to confirm everything.
 
 That's all now, no need to constantly enter paths just in the (CMD) console Example: ```C:\Users\appath> npass -l 27 -c 7```
 
-[![MIT License](https://img.shields.io/github/license/appath/NPass?label=License&style=flat-square)]
-(https://github.com/appath/NPass/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/github/license/appath/NPass?label=License&style=flat-square)](https://github.com/appath/NPass/blob/master/LICENSE)
 
 
