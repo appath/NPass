@@ -6,6 +6,7 @@ NPass GUI (Generate random password) - Not ready. In the process...
 
 NPass Console Option (Generate random password)
 
+__F.A.Q__
 __how to use NPass Console?__
 
 unzip the downloaded archive NPass.zip, anywhere on your hard drive Example: (```C:\NPass```)
