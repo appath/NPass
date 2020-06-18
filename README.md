@@ -4,7 +4,6 @@
 
 __NPass GUI__ (Generate random password) - Not ready. In the process...
 
-__infos__
 =======================
 
  - MacOS
