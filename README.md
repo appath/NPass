@@ -38,3 +38,7 @@ That's all now, no need to constantly enter paths just in the (CMD) console Exam
 
 
 ![NPass GUI](https://github.com/appath/NPass/blob/master/%23/%23npass_gui.png)
+
+## License MIT
+
+MIT. See `LICENSE` for more details.<br />
