@@ -4,8 +4,12 @@
 
 __NPass GUI__ (Generate random password) - Not ready. In the process...
 
-__INFOS__
+__infos__
 =======================
+
+ - MacOS
+ - Microsoft Windows 8, 8.1, 10
+ - Linux
 
 __Console version__
 
