@@ -12,7 +12,7 @@ __F.A.Q__
 
 __how to use NPass Console?__
 
-unzip the downloaded archive NPass.zip, anywhere on your hard drive Example: (```C:\NPass```)
+Unzip the downloaded archive NPass.zip, anywhere on your hard drive Example: (```C:\NPass```)
 
 open .. ```Command line``` (CMD) now you can use it to generate random passwords,
 
