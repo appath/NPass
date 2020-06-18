@@ -12,6 +12,7 @@ __NPass Console__ Option (Generate random password)
 
 [![Console](https://img.shields.io/github/v/release/appath/NPass?color=inactive&label=Console&style=flat-square)](https://github.com/appath/NPass/releases)
 
+Info"s
 **************
 
 __F.A.Q__
