@@ -1,6 +1,6 @@
 #### NPass (Generate random password)
 
-![License](https://img.shields.io/github/license/appath/NPass?label=License&style=flat-square)
+![License](https://img.shields.io/github/license/appath/NPass?style=flat-square)
 
 NPass GUI (Generate random password) - Not ready. In the process...
 
