@@ -1,6 +1,6 @@
 #### NPass
 
-![License](https://img.shields.io/github/license/appath/NPass?style=flat-square)
+👋 ![License](https://img.shields.io/github/license/appath/NPass?style=flat-square)
 
 __NPass GUI__ (Generate random password) - Not ready. In the process...
 
