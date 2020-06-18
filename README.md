@@ -4,7 +4,7 @@
 
 __NPass GUI__ (Generate random password) - Not ready. In the process...
 
-_INFOS_
+__INFOS__
 =======================
 
 __Console version__
