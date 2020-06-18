@@ -15,3 +15,5 @@ unzip the downloaded archive NPass.zip, anywhere on your hard drive Example: (``
 open .. ```Command line``` (CMD) now you can use it to generate random passwords,
 
 type in console ```C:\NPass> npass.exe --help ``` for example with an argument.
+
+__how to make sure that the console does not constantly enter the path to the executable file npass.exe?__
