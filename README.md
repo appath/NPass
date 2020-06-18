@@ -10,8 +10,6 @@ __NPass GUI__ (Generate random password) - Not ready. In the process...
  - Microsoft Windows 8, 8.1, 10
  - Linux
 
-__Console version__
-
 __NPass Console__ Option (Generate random password)
 
 [![Console](https://img.shields.io/github/v/release/appath/NPass?color=inactive&label=Console&style=flat-square)](https://github.com/appath/NPass/releases)
