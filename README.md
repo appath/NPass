@@ -2,13 +2,13 @@
 
 ![License](https://img.shields.io/github/license/appath/NPass?style=flat-square)
 
-NPass GUI (Generate random password) - Not ready. In the process...
+__NPass GUI__ (Generate random password) - Not ready. In the process...
 
 
 
 __Console version__
 
-NPass Console Option (Generate random password)
+__NPass Console__ Option (Generate random password)
 
 [![Console](https://img.shields.io/github/v/release/appath/NPass?color=inactive&label=Console&style=flat-square)](https://github.com/appath/NPass/releases)
 
