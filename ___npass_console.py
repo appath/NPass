@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
             2020 Wizard Packed, Free Software
             Git: https://github.com/appath""")
-    parser.add_argument("-v", "--version", help="print version", action="version", version="%(prog)s [version 1.12.0]")
+    parser.add_argument("-v", "--version", help="print version", action="version", version="%(prog)s [version 0.2.0]")
     parser.add_argument("-l", "--length", type=int, help="length of password in integer, default is 8", default=8)
     parser.add_argument("-c", "--count", type=int, help="number of passwords to generate", default=1)
     
