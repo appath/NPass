@@ -1,4 +1,4 @@
-#### NPass (Generate random password)
+#### NPass
 
 ![License](https://img.shields.io/github/license/appath/NPass?style=flat-square)
 
