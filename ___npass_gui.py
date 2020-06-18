@@ -10,8 +10,8 @@ def copy_set():
 
 src = Tk()
 
-src.wm_title("#Generate Secure Password")
-src.iconbitmap("img/icon.ico")
+src.wm_title("#Npass GUI (Generate random password)")
+src.iconbitmap("npass_gui_icon.ico")
 src.resizable(height=False, width=False)
 src.geometry("544x262")
 
@@ -98,7 +98,7 @@ generate_1.grid(padx=0, row=0, column=2)
 character_set2.pack(fill="both", expand="yes", padx=4, pady=4)
 
 #WEB_LINK
-url = "https://github.com/appath/GeneratePassword/releases"
+url = "https://github.com/appath/NPass/releases"
 
 def callback_function(event):
     webbrowser.open_new(url)
