@@ -18,7 +18,7 @@ type in console ```C:\NPass> npass.exe --help ``` for example with an argument.
 
 __how to make sure that the console does not constantly enter the path to the executable file npass.exe?__
 
-quite simply, by right-clicking on the shortcut on this computer, from the pop-up menu, select 
+Quite simply, by right-clicking on the shortcut on this computer, from the pop-up menu, select 
 
 Properties-> Advanced system settings-> Advanced-> Environment variables in the User Environment Variables window for <USER>
 
