@@ -4,8 +4,6 @@
 
 NPass GUI (Generate random password) - Not ready. In the process...
 
-![NPass GUI](https://github.com/appath/NPass/blob/master/%23/%23npass_gui.png)
-
 
 
 __Console version__
@@ -36,5 +34,5 @@ don't forget to confirm everything.
 
 That's all now, no need to constantly enter paths just in the (CMD) console Example: ```C:\Users\appath> npass -l 27 -c 7```
 
-![NPass Console](https://github.com/appath/NPass/blob/master/%23/%23npass_console.png)
 
+![NPass GUI](https://github.com/appath/NPass/blob/master/%23/%23npass_gui.png)
