@@ -4,7 +4,7 @@ from uuid import uuid4
 from os import name, system
 from random import choice, SystemRandom
 
-parser = argparse.ArgumentParser(prog="NPass Console", 
+parser = argparse.ArgumentParser(prog="NPass Console Option", 
 formatter_class=argparse.RawDescriptionHelpFormatter, 
 description="""\
     README
