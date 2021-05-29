@@ -35,6 +35,7 @@ select item Path click on the <Modify> button, click on the <Create> button agai
 don't forget to confirm everything.
 
 That's all now, no need to constantly enter paths just in the (CMD) console Example: 
+
 ```C:\Users\appath> npass -l 27 -c 7```
 
 
