@@ -2,7 +2,13 @@
 
 ![License](https://img.shields.io/github/license/appath/NPass?style=flat-square)
 
-__NPass GUI__ (Generate random password) - Not ready. In the process...
+__NPass GUI__ (Generate random password) - Finally, friends, I had time to do it in graphical form...
+
+You can download the layers and see the design in Figma
+ - Layered file:
+       Npass GUI Tkinter.fig
+ - You can also view the script:
+       npass_gui.py
 
 =======================
 
