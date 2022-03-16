@@ -1,132 +1,108 @@
 # -*- coding: utf-8 -*-
+#!/usr/src/env python3
+import random
+import pyperclip
 from tkinter import *
 from tkinter import ttk
-import webbrowser
 
-# Function for copying password
-def copy_set():
-	pass
+# Program title and version
+name = "Npass | Generate random password"
+version = "ver.1.2.1.0"
 
-src = Tk()
+# Window TK
+root = Tk()
+root.wm_title(f"{name} {version}")
+root.iconbitmap("IDI_APPICON.ico")
+root.resizable(height=False, width=False)
+root.geometry("544x210")
 
-src.wm_title("#Npass GUI (Generate random password)")
-src.iconbitmap("npass_gui_icon.ico")
-src.resizable(height=False, width=False)
-src.geometry("544x262")
+# From which items you want to generate pass
+set_check0 = IntVar()
+set_check1 = IntVar()
+set_check2 = IntVar()
+set_check3 = IntVar()
+set_combobox = IntVar()
 
-#NoteBook
-note = ttk.Notebook(src)
+# Items used to generate pass
+upper_case = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V","W", "X", "Y", "Z"]
+lower_case = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+numerals_case = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+sumbols_case = ["!", "#", "$", "/", "@", "%", "(", "&", "*", ")"]
 
-details = Frame(note)
-information = Frame(note)
-about = Frame(note)
+def generate():
+    exhaust.delete(0, END)
 
-note.add(details, text="  Details  ", compound=TOP)
-note.add(information, text="  Information  ")
-note.add(about, text="  About  ")
-note.pack(fill=BOTH, expand=True)
+    final_list = []
+    length = set_combobox.get()
 
-#Details
-#LabelFrame 
-character_set = ttk.LabelFrame(details, text=" Character Set ")
+    if (set_check3.get()):
+        final_list.append(sumbols_case)
+    if (set_check2.get()):
+        final_list.append(numerals_case)
+    if (set_check1.get()):
+        final_list.append(lower_case)
+    if (set_check0.get()):
+        final_list.append(upper_case)
+    
+    bound = set_check0.get() + set_check1.get() + set_check2.get() + set_check3.get()
 
-#Checkbutton
-check_button1 = IntVar()
-chek_button_lower = ttk.Checkbutton(character_set, text="Upper case (A-Z)", variable=check_button1)
+    if not (bound):
+        return ("Choose the option you need . . .")
+    
+    password = []
+    
+    for i in range(length):
+        if (i == 0):
+            a = 1
+        else:
+            a = random.randint(1, bound)
+        k = final_list[a - 1]
+        b = random.randint(0, len(k) - 1)
+        password.append(str(k[b]))
+
+    return ("".join(password))
+
+def display():
+    password = generate()
+    exhaust.insert(0, password)
+
+def buffer():
+    exhaust_pass = exhaust.get()
+    pyperclip.copy(exhaust_pass)
+
+# START
+character_set0 = ttk.LabelFrame(root, text=" Character Set ")
+chek_button_lower = ttk.Checkbutton(character_set0, text="Upper case (A-Z)", variable=set_check0, onvalue=1, offvalue=0)
 chek_button_lower.grid(padx=4, row=0, column=0)
-
-check_button2 = IntVar()
-chek_button_upper = ttk.Checkbutton(character_set, text="Lower case (a-z)", variable=check_button2)
+chek_button_upper = ttk.Checkbutton(character_set0, text="Lower case (a-z)", variable=set_check1, onvalue=1, offvalue=0)
 chek_button_upper.grid(padx=4, row=0, column=1)
-
-check_button3 = IntVar()
-chek_button_numerals = ttk.Checkbutton(character_set, text="Numerals (0-9)", variable=check_button3)
+chek_button_numerals = ttk.Checkbutton(character_set0, text="Numerals (0-9)", variable=set_check2, onvalue=1, offvalue=0)
 chek_button_numerals.grid(padx=4, row=0, column=2)
-
-check_button4 = IntVar()
-chek_button_sumbols = ttk.Checkbutton(character_set, text="Specials sumbols (e.g !#$/@)", variable=check_button4)
+chek_button_sumbols = ttk.Checkbutton(character_set0, text="Specials sumbols (e.g !#$/@)", variable=set_check3, onvalue=1, offvalue=0)
 chek_button_sumbols.grid(padx=4, row=0, column=3)
-
-#Label
-text = ttk.Label(character_set, text="A character set is a table that specifies the encoding\
-	\nof a finite set of characters in the alphabet.")
+text = ttk.Label(character_set0, text="A character set is a table that specifies the encoding of a finite set of characters in the alphabet.")
 text.grid(padx=4, row=1, column=0, columnspan=4, sticky=W)
+character_set0.pack(fill="both", expand="yes", padx=4, pady=4)
 
-#LabelFrame END
-character_set.pack(fill="both", expand="yes", padx=4, pady=4)
-
-#LabelFrame1
-character_set1 = ttk.LabelFrame(details, text=" Minimal Amount ")
-
-#Combobox
-comboExample = ttk.Combobox(character_set1, 
-                            values=[
-								"8", "9", "10", "11", 
-								"12", "13", "14", "15", 
-								"16", "17", "18", "19", 
-								"20", "21", "22", "23", 
-								"24", "25", "26", "27",
-								"28", "29", "30", "31",
-								"32"])
-
-comboExample.current(0) 
-comboExample.bind("<<ComboboxSelected>>") 
+character_set1 = ttk.LabelFrame(root, text=" Minimal Amount ")
+# The text field is not editable and the user can only select values from the drop down list.
+comboExample = ttk.Combobox(character_set1, values=["8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22"], state="readonly", textvariable=set_combobox)
+comboExample.current(0)
+comboExample.bind("<<ComboboxSelected>>")
 comboExample.grid(padx=6, pady=4, row=0, column=0)
-
-#Label1
-text = ttk.Label(character_set1, text="Minimum length of numbers, letters and characters in a password")
+text = ttk.Label(character_set1, text="Minimum length of numbers, letters and characters in a password.")
 text.grid(row=0, column=1)
-
-#LabelFrame1 END
 character_set1.pack(fill="both", expand="yes", padx=4, pady=4)
 
-#LabelFrame2
-character_set2 = ttk.LabelFrame(details, text=" Secure Password ")
-
-#Entry password
-exhaust = ttk.Entry(character_set2, width=59)
+character_set2 = ttk.LabelFrame(root, text=" Secure Password ")
+exhaust = ttk.Entry(character_set2, state=NORMAL, width=59)
 exhaust.grid(padx=6, pady=4, row=0, column=0)
-
-#Button 0 and 1 (Copy, Generate)
-generate_0 = ttk.Button(character_set2, text="Copy", command=copy_set)
-generate_1 = ttk.Button(character_set2, text="Generate")
+generate_0 = ttk.Button(character_set2, text="Copy", command=buffer)
+generate_1 = ttk.Button(character_set2, text="Generate", command=display)
 generate_0.grid(row=0, column=1)
 generate_1.grid(padx=0, row=0, column=2)
-
-#LabelFrame2 END
 character_set2.pack(fill="both", expand="yes", padx=4, pady=4)
-
-#WEB_LINK
-url = "https://github.com/appath/NPass/releases"
-
-def callback_function(event):
-    webbrowser.open_new(url)
-
-link = ttk.Label(src, text="#Releases", cursor="hand2")
-link.bind("<Button-1>", callback_function)
-link.pack(padx=4, side=LEFT)
-
-#Information
-#LabelFrame3
-character_set3 = ttk.LabelFrame(information, text="Create strong and random passwords")
-
-#README
-readme = ttk.Label(character_set3, text="Be sure to use a unique password for each new account.\
-	\nThe danger of using the same passwords is that if one site is compromised, it will\
-	\nbe easier for hackers to try to use the same username and password combination on\
-	\nother websites.\
-	\n\
-	\nDo not use any data related to your identity in passwords. Names,\
-	\nbirthdays and addresses are easy to remember, but they are also\
-	\neasy to find on the Internet. Therefore, to achieve maximum\
-	\npassword strength, this information should not be used.\
-	\n\
-	\nPasswords must be at least 12 characters long and contain letters, numbers\
-	\nand special characters. Try not to use weak and commonly used passwords.")
-readme.grid(padx=4, row=0, column=0)
-
-#LabelFrame3 END
-character_set3.pack(fill="both", expand="yes", padx=4, pady=4)
+# THE END
 
 if __name__ == "__main__":
-	src.mainloop()
+    root.mainloop()
