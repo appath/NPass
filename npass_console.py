@@ -3,7 +3,7 @@ import uuid
 import random
 import argparse
 
-parser = argparse.ArgumentParser(prog="NPass Console", formatter_class=argparse.RawDescriptionHelpFormatter, description="""\
+parser = argparse.ArgumentParser(prog="NPass Console | Generate random password", formatter_class=argparse.RawDescriptionHelpFormatter, description="""\
     To prevent your passwords from being hacked by social engineering, 
     brute force or dictionary attack method, and keep your
     online accounts safe, you should notice that
@@ -16,9 +16,11 @@ parser = argparse.ArgumentParser(prog="NPass Console", formatter_class=argparse.
     
     2020 Wizard Packed, Free Software
     GitHub: https://github.com/appath""")
-parser.add_argument("-v", "--version", help="print version", action="version", version="%(prog)s [version 1.12.0]")
+
+parser.add_argument("-v", "--version", help="print version", action="version", version="%(prog)s ver.1.2.0.0")
 parser.add_argument("-l", dest="length", type=int, help="length of password in integer, default is 8", default=8)
 parser.add_argument("-c", dest="count", type=int, help="number of passwords to generate", default=1)
+
 (options) = parser.parse_args()
 length = options.length
 count = options.count
