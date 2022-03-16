@@ -10,8 +10,6 @@ SYSTEMS=======================
  - Microsoft Windows 8, 8.1, 10
  - Linux
 
-__NPass__ (Generate random password)
-
 __F.A.Q__
 
 __how to use NPass Console?__
