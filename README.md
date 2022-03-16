@@ -4,12 +4,10 @@
 
 __NPass GUI__ (Generate random password) - Finally, friends, I had time to do it in graphical form...
 
-You can download the layers and see the design in Figma
+You can download the layers and see the design in Figma __Npass GUI Tkinter.fig__
 
-```Layered file: __Npass GUI Tkinter.fig__```
-```You can also view the script: __npass_gui.py__```
 
-=======================
+INFO=======================
 
  - MacOS
  - Microsoft Windows 8, 8.1, 10
