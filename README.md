@@ -4,7 +4,7 @@
 
 __NPass GUI__ (Generate random password) - Finally, friends, I had time to do it in graphical form...
 
-You can download the layers and see the design in Figma __Npass GUI Tkinter.fig__
+You can download the layers and see the design in Figma ```Npass GUI Tkinter.fig```
 
 
 SYSTEMS=======================
