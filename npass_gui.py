@@ -6,8 +6,8 @@ from tkinter import *
 from tkinter import ttk
 
 # Program title and version
-name = "Npass | Generate random password"
-version = "ver.1.2.1.0"
+name = "Npass (Generate random password) | "
+version = "ver.1.2.1.build.0"
 
 # Window TK
 root = Tk()
