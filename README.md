@@ -1,9 +1,8 @@
-#### NPass
-
-__NPass GUI__ (Generate random password) - Finally, friends, I had time to do it in graphical form...
+#### NPass (Generate random password) - Finally, friends, I had time to do it in graphical form...
 
 You can download the layers and see the design in Figma ```Npass GUI Tkinter.fig```
 
+[![Console](https://img.shields.io/github/v/release/appath/NPass?color=inactive&label=npass&style=flat-square)](https://github.com/appath/NPass/releases)
 
 SYSTEMS=======================
 
@@ -12,8 +11,6 @@ SYSTEMS=======================
  - Linux
 
 __NPass__ (Generate random password)
-
-[![Console](https://img.shields.io/github/v/release/appath/NPass?color=inactive&label=npass&style=flat-square)](https://github.com/appath/NPass/releases)
 
 __F.A.Q__
 
@@ -44,4 +41,5 @@ That's all now, no need to constantly enter paths just in the (CMD) console Exam
 
 ## License MIT
 ![License](https://img.shields.io/github/license/appath/NPass?style=flat-square)
+
 MIT. See `LICENSE` for more details.<br />
